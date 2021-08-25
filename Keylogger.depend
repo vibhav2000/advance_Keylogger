@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1629834660 source:c:\users\vibhav\desktop\code\advkeylogger in c++\keylogger\main.cpp
+	<iostream>
+	<windows.h>
+
