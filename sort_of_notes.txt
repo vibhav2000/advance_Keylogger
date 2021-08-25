@@ -1,0 +1,42 @@
+1.Installing codeBlocks (using 5g wifi)
+2. trying to create a header(.h) file and deleting it in codeblocks. What is does is, remove that .h file from codeblocks prject window but keep it there in Windows explorer. 
+SO we gotta delete it there too.
+3. We hide the keylogger window, by passing it...
+	using 
+#include<iostream>
+#include<Windows.h>
+using namespace std;
+
+int main()
+{
+    MSG Msg;
+
+    while(GetMessage(&Msg, NULL, 0, 0))
+    {
+        TranslateMessage(&Msg);
+        DispatchMessage(&Msg);
+
+    }
+    return 0;
+}
+
+.. what this does is, if i execute this above file from my explorer folder and i click to run it.. nothing happens. that means the program ran but the window didnt show/open..
+i can also check it by going into tskmngr and checking in services for my prgram.
+
+
+4. We will be using approx 7 headers..first we'll be getting a guard (sometimes called a macro guard, header guard or file guard, is a particular construct used to avoid the problem of double inclusion when dealing with the include directive)
+
+
+
+
+IO.h - where will we store all the functions used in the input output operations like creating, finding, deleting etcc
+
+Parallel code execution and Remote code execution && precise way of sending mail every 12 hours. contains thread library and chronos library.
+communication btw 2 process is diff than comm btw 2 threads (share the same memory address)
+chrono is a time library
+
+
+Header to send mail directly from CPP: we use powershell script to send mail
+and put it in our code
+
+Heart of our keylogger is header:: KeybHook (we use hooks to record keystrokes)
